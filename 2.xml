@@ -1,34 +1,34 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="82" x="372" y="130">
+  <block type="oled_cleardisplay" id="1" x="372" y="130">
     <next>
-      <block type="controls_whileUntil" id="19" inline="false">
+      <block type="controls_whileUntil" id="2" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="sensor_button" id="144">
+          <block type="sensor_button" id="3">
             <field name="OBJECT">UP</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="oled_cleardisplay" id="72">
+          <block type="oled_cleardisplay" id="4">
             <next>
-              <block type="oled_drawtext" id="123">
+              <block type="oled_drawtext" id="5">
                 <field name="TEXT">yalllow</field>
                 <next>
-                  <block type="oled_drawnumber" id="105" inline="true">
+                  <block type="oled_drawnumber" id="6" inline="true">
                     <value name="NUMBER">
-                      <block type="sensor_spectrometer" id="151">
+                      <block type="sensor_spectrometer" id="7">
                         <field name="LIGHT">BLUE</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_setcursor" id="160" inline="true">
+                      <block type="oled_setcursor" id="8" inline="true">
                         <value name="STARTX">
-                          <block type="math_number" id="35">
+                          <block type="math_number" id="9">
                             <field name="NUM">0</field>
                           </block>
                         </value>
                         <value name="STARTY">
-                          <block type="math_number" id="161">
+                          <block type="math_number" id="10">
                             <field name="NUM">10</field>
                           </block>
                         </value>
